@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        .divContent{
+            height: 100px;
+            width: 100px;
+            background-color:rgb(90, 90, 173)
+        }
+        #one{
+            margin: 7px;
+            padding: 5px;
+            box-sizing: content-box;
+            border: 2px dotted rebeccapurple;
+        }
+        #two{
+            margin: 7px;
+            box-sizing: border-box;
+            padding: 5px;
+            border: 2px dotted red;
+        }
+        #button{
+            padding: 10px 15px 10px 15px;
+            margin: 100px;
+            border: 2px dotted;
+            border-color:red ;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="one" class="divContent">
+        This is the content
+    </div>
+    <div id="two" class="divContent">
+        This is the content
+    </div>
+    <button id="button">Click Me</button>
+</body>
+</html>
